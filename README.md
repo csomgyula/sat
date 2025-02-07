@@ -1,4 +1,4 @@
-# SAT
+# SAT readme
 
 ## Goal
 
