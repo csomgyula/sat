@@ -7,6 +7,8 @@ Experiment with the [SAT problem](https://en.wikipedia.org/wiki/Boolean_satisfia
 - the primary research direction is generating proofs from solvers,
 - the secondary direction is the solvers themselves. 
 
+## Problem domain
+
 See details in [Wiki](https://github.com/csomgyula/sat/wiki).
 
 ## License
