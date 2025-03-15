@@ -4,21 +4,31 @@ működhet a behelyettesítés változóba két formában is:
 
 ha van olyan x1,x2 ami kétféle alakban is előfordul, akkor csökkenthető a változók száma:
 
+```
 (x1, x2) & (x1, ~x2) => x1 true
 (x1, x2) & (~x1, ~x2) => x1 = ~x2
+```
 
 ha viszont bármely két változó csak egyféle alakban fordul elő, akkor 0,1,2 megoldás 
 lehet csak a független részeken
 
-kössük össze a behelyettesített értékeket:
+kössük össze a behelyettesített értékeket: 
 
-(x_i, true) össze van kötve (x_j, ^x_j^)-vel, ha van (~x_i, ^x_j) alakú kettes (egyféle lehet)
+minden `(x_i, v)`-t azokon a 2-sat kikötéseken keresztül, ahol az `x_i` `v`-vel ellentétes alakban 
+szerepel (azaz, amire `v` nem teljesíti az `x_i`-re eső kikötést, ergo a másik tag kell igaz legyen), 
+összekötjük a másik tag értékével.
 
-ahol 
-	^x_j = x_j esetén ^x_j^ true
-	^x_j = ~x_j esetén ^x_j^ false
-	
-azaz egy behelyettesítés meghatároz egy csomó értéket, egészen, amíg független
+jelölés:
+
+```
+^x =  x esetén ^x^ := true
+^x = ~x esetén ^x^ := false
+```
+
+`(x_i, true)` össze van kötve `(x_j, ^x_j^)`-vel, ha van `(~x_i, ^x_j)` alakú kettes (egyféle lehet)
+szavakkal, 
+
+azaz egy behelyettesítés meghatároz egy csomó értéket, egészen, amíg független részhez nem jutok
 
 2. függetlenség
 
