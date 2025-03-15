@@ -25,9 +25,10 @@ $p * 1/4 * 2^k > 2^k - k \implies p > 4 - 4k/2^k$
 Vagyis már 4 ilyen patter elég?!
 
 
-- példa 3 változóra: $3 > 8 - p \* 1/4 \* 8 = 8 - p * 2 \implies p * 2 > 5 \implies p> 2,5$
+- példa 2 változóra: $2 >  4 - p * 1/4 *  4 =  4 - p     \implies p     > 2$
+- példa 3 változóra: $3 >  8 - p * 1/4 *  8 =  8 - p * 2 \implies p * 2 > 5 \implies p> 2,5$
 - példa 4 változóra: $4 > 16 - p * 1/4 * 16 = 16 - p * 4 \implies p * 4 > 12 \implies p>3$
-- példa 5 változóra: 5 > 32 - p * 1/4 * 32 = 32 - p * 8 ... p * 8 > 27 ... p > 3,3...
+- példa 5 változóra: $5 > 32 - p * 1/4 * 32 = 32 - p * 8 \implies p * 8 > 27  \implies p > 3,3$
 
 ## Példa
 
